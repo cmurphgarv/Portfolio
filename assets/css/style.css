@@ -60,23 +60,16 @@ a:hover {
 }
 
 .portfolio {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px;
+    display: flex;
+    flex-wrap: wrap;
     background-color: var(--white2);
     color: var(--black);
     text-align: center;
     width: 100%;
 }
 
-.portfolio-images {
+.portfolio:first-child {
     width: 100%;
-    border: none;
-}
-
-#app-1 {
-    grid-column-start: span 2;
 }
 
 .about-me {
