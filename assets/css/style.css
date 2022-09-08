@@ -1,20 +1,28 @@
+:root {
+    --white: #fff;
+    --white2: #f1f1f1;
+    --gray1: #616161;
+    --gray2: #757575;
+    --black: #000;
+}
+
 body {
-    background-color:  #616161;
+    background-color:  var(--gray1);
     font-family: "Raleway", sans-serif;
-    color: #fff;
+    color: var(--white);
     margin: 0;
 }
 
 .sidebar {
     height: 100%;
     width: 300px;
-    background-color:#fff;
+    background-color: var(--white);
     position: fixed;
     z-index: 3;
     overflow: auto;
     font-weight: bold;
     text-align: center;
-    color: #757575;
+    color: var(--gray2)
 }
 
 .name {
@@ -33,7 +41,7 @@ body {
     text-align: center;
     font-size: 15px;
     line-height: 1.5;
-    color: #757575;
+    color: var(--gray2);
 }
 
 a {
@@ -43,7 +51,7 @@ a {
 
 a:hover {
     background-color: #ccc;
-    color: #000;
+    color: var(--black);
 }
 
 .content {
@@ -56,8 +64,8 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px;
-    background-color: #f1f1f1;
-    color: #000;
+    background-color: var(--white2);
+    color: var(--black);
     text-align: center;
     width: 100%;
 }
@@ -72,14 +80,14 @@ a:hover {
 }
 
 .about-me {
-    background-color: #616161;
-    color: #fff;
+    background-color: var(--gray1);
+    color: var(--white);
     font-weight: 600;
     text-align: center;
 }
 
 .about-me h4 {
-    color: #fff;
+    color: var(--white);
     font-weight: 600;
     font-size: 20px;
 }
@@ -90,9 +98,13 @@ a:hover {
 }
 
 .contact-info { 
-    background-color: #f1f1f1;
-    color: #000;
+    background-color: var(--white2);
+    color: var(--black);
     text-align: center;
+}
+
+.contact-info h4 {
+    padding-top: 20px;
 }
 
 .contact-links {
@@ -102,7 +114,7 @@ a:hover {
 }
 
 .contact-links a {
-    color: #000;
+    color: var(--black);
     font-size: 15px;
 }
 
@@ -114,4 +126,11 @@ a:hover {
 .logos {
     width: 20px;
     height: 20px;
+}
+
+.logo-position {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
