@@ -70,9 +70,6 @@ a:hover {
 
 .portfolio img:first-child {
     width: 100%;
-    opacity: 1;
-    transition: .5s ease;
-    backface-visibility: hidden;
 }
 
 .portfolio img:nth-child(n+2) {
@@ -80,10 +77,6 @@ a:hover {
     opacity: 1;
     transition: .5s ease;
     backface-visibility: hidden;
-}
-
-.portfolio img:hover {
-
 }
 
 .about-me {
@@ -112,6 +105,7 @@ a:hover {
 
 .contact-info h4 {
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .contact-links {
