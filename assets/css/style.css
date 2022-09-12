@@ -94,6 +94,7 @@ a:hover {
 
 .portfolio .images:hover {
     opacity: .5;
+    cursor: pointer;
 }
 
 /*styles to caption each image while maintaining page positioning*/
