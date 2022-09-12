@@ -13,6 +13,8 @@ body {
     margin: 0;
 }
 
+/*style sidebar and nav menu in sidebar*/
+
 .sidebar {
     height: 100%;
     width: 300px;
@@ -25,6 +27,8 @@ body {
     color: var(--gray2)
 }
 
+/*special style rules for name on the sidebar*/
+
 .name {
     padding-top: 64px;
     padding-bottom: 64px;
@@ -33,6 +37,8 @@ body {
     font-weight: 600;
     text-align: center;
 }
+
+/*style links on the sidebar*/
 
 .sidetags {
     display: block;
@@ -44,20 +50,28 @@ body {
     color: var(--gray2);
 }
 
+/*links shouldn't have an underline*/
+
 a {
     text-decoration: none;
     
 }
+
+/*apply hover effect to all links except the portfolio images*/
 
 a:hover {
     background-color: #ccc;
     color: var(--black);
 }
 
+/*the container of the body needs to move to the right so that the sidebar doesn't cover it*/
+
 .content {
     margin-left: 300px;
 
 }
+
+/*section for portfolio images and their links*/
 
 .portfolio {
     display: flex;
@@ -68,16 +82,38 @@ a:hover {
     width: 100%;
 }
 
-.portfolio img:first-child {
+/*make the first image bigger than the others*/
+
+.portfolio .images:first-child {
     width: 100%;
 }
 
-.portfolio img:nth-child(n+2) {
+.portfolio .images:nth-child(n+2) {
     width: 50%;
-    opacity: 1;
-    transition: .5s ease;
-    backface-visibility: hidden;
 }
+
+.portfolio .images:hover {
+    opacity: .5;
+}
+
+/*styles to caption each image while maintaining page positioning*/
+
+.portfolio img {
+    width: 100%;
+    height: 100%;
+}
+
+.caption {
+    position: relative;
+    bottom: 2em;
+    left: 1em;
+    color: var(--black);
+    text-align: center;
+    font-weight: 600;
+    background-color: #a6c3c3;
+    width: 175px;
+}
+/*about me section styles*/
 
 .about-me {
     background-color: var(--gray1);
@@ -96,6 +132,16 @@ a:hover {
     width: 350px;
     height: 363.917px;
 }
+
+p {
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: justify;
+    font-weight: 400;
+    line-height: 2;
+}
+
+/*contact info section styles*/
 
 .contact-info { 
     background-color: var(--white2);
@@ -119,10 +165,14 @@ a:hover {
     font-size: 15px;
 }
 
+/*rule for multiple section headers*/
+
 .contact-info, .portfolio h4 {
     font-size: 20px;
     font-weight: 600;
 }
+
+/*logos above contact links*/
 
 .logos {
     width: 20px;
@@ -134,4 +184,27 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/*handle multiple screen sizes*/
+
+/*sidebar at 993px*/
+@media screen and (min-width: 993px) {
+    .hideNav {
+        display: none !important;
+       }
+    
+}
+/*sidebar at 768px*/
+@media screen and (max-width: 993px) {
+   .sidebar {
+    display: none !important;
+   }
+   .content {
+    margin-left: 0;
+ }
+    .name {
+        display: inline-block;
+        width: 100%;
+    }
 }
