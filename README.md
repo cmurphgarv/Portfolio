@@ -6,7 +6,7 @@ Created original code to make professional portfolio website to display projects
 
 # Preview
 
-![Website Preview Image](./assets/images/PortfolioPreview2.png)
+![Website Preview Image](./assets/images/PortfolioPreviewNew.png)
 
 # Installation
 
